@@ -43,9 +43,9 @@ RUN apt-get update
 
 # Configuring wpa_supplicant with systemd-networkd
 
-RUN apt-get install -y wpasupplicant
+# RUN apt-get install -y wpasupplicant
 
-source ./wpa_supplicant.Pifile
+# source ./wpa_supplicant.Pifile
 
 ##################################
 
@@ -57,34 +57,34 @@ source ./packages.Pifile
 
 # Installing automagic-ap
 
-RUN bash -c "git clone https://github.com/imsenthur/automagic-ap.git /etc/automagic-ap"
-RUN bash -c "sudo chown -R ${user} /etc/automagic-ap"
+# RUN bash -c "git clone https://github.com/imsenthur/automagic-ap.git /etc/automagic-ap"
+# RUN bash -c "sudo chown -R ${user} /etc/automagic-ap"
 
 ##################################
 
 # Installing webmin
 
-RUN bash -c 'echo "deb https://download.webmin.com/download/repository sarge contrib" >> /etc/apt/sources.list'
-RUN bash -c "wget http://www.webmin.com/jcameron-key.asc"
-RUN apt-key add jcameron-key.asc
+# RUN bash -c 'echo "deb https://download.webmin.com/download/repository sarge contrib" >> /etc/apt/sources.list'
+# RUN bash -c "wget http://www.webmin.com/jcameron-key.asc"
+# RUN apt-key add jcameron-key.asc
 
-RUN apt update
-RUN apt install -y webmin
+# RUN apt update
+# RUN apt install -y webmin
 
 ##################################
 
 # Configuring message of the day (motd)
 
-RUN bash -c "sudo rm -rf /etc/motd"
-RUN bash -c "curl -L https://raw.githubusercontent.com/imsenthur/neuropi-motd/main/motd -o /home/${user}/.bash_profile"
+# RUN bash -c "sudo rm -rf /etc/motd"
+# RUN bash -c "curl -L https://raw.githubusercontent.com/imsenthur/neuropi-motd/main/motd -o /home/${user}/.bash_profile"
 
 ##################################
 
 # Setting up startup_mailer and rc.local
 
-source ./startup_mailer.Pifile
+# source ./startup_mailer.Pifile
 
-source ./rc_local.Pifile
+# source ./rc_local.Pifile
 
 ##################################
 
