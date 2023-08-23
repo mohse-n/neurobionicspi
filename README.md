@@ -57,7 +57,8 @@ This image has only been tested on the Raspberry Pi v4.  It will not work on the
 | `EMAIL` | ejrouse@umich.edu | 
 
 # Issues
-Kindly report any issues [here](https://github.com/neurobionics/neurobionicspi/issues).
+For wpa_supplicant debugging see [here](https://raspberrypi.stackexchange.com/questions/94178/wifi-wont-start).
+For connecting to an unsecured network see [here](https://raspberrypi.stackexchange.com/questions/15393/connect-to-unsecured-wireless-network)
 
 # References
 * [Pimod](https://github.com/marketplace/actions/run-pimod)
