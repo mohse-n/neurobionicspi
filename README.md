@@ -60,5 +60,7 @@ This image has only been tested on the Raspberry Pi v4.  It will not work on the
 For wpa_supplicant debugging see [here](https://raspberrypi.stackexchange.com/questions/94178/wifi-wont-start).
 For connecting to an unsecured network see [here](https://raspberrypi.stackexchange.com/questions/15393/connect-to-unsecured-wireless-network)
 
+ImportError: libcblas.so.3: cannot open shared object file: No such file or directory. To fix this, use $sudo apt-get install libatlas-base-dev
+
 # References
 * [Pimod](https://github.com/marketplace/actions/run-pimod)
